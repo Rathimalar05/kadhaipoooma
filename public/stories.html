@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Story Wall — Kadhaipooma</title>
+<meta name="description" content="Read what other guests have left behind, or pin your own memory to the Kadhaipooma story wall.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Literata:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand">
+      <span class="brand-mark">Kadhaipooma</span>
+      <span class="brand-sub">கதைப்போமா</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/menu.html">Menu</a></li>
+        <li><a href="/stories.html" class="active">Story Wall</a></li>
+        <li><a href="/about.html">Our Story</a></li>
+        <li><a href="/contact.html">Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <svg class="page-hero-motif" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="40" y="40" width="120" height="120" fill="none" stroke="#c9a24a" stroke-width="1" transform="rotate(8 100 100)"/>
+    </svg>
+    <div class="container">
+      <span class="hero-eyebrow">The wall</span>
+      <h1>Story Wall</h1>
+      <p>Every note here was left by someone who sat where you're sitting. Read a while, then leave one of your own.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="wall-filters" role="group" aria-label="Filter stories by mood">
+        <button class="chip active" data-mood="all">All stories</button>
+        <button class="chip" data-mood="warm">Warm</button>
+        <button class="chip" data-mood="nostalgic">Nostalgic</button>
+        <button class="chip" data-mood="funny">Funny</button>
+        <button class="chip" data-mood="bittersweet">Bittersweet</button>
+        <button class="chip" data-mood="hopeful">Hopeful</button>
+      </div>
+
+      <div class="story-board" id="story-board">
+        <div class="empty-state">Gathering the stories...</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="kolam-divider" aria-hidden="true">
+    <svg width="160" height="24" viewBox="0 0 160 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="var(--gold)" stroke-width="1.2" opacity="0.7">
+        <circle cx="12" cy="12" r="3"/><circle cx="36" cy="12" r="3"/><circle cx="60" cy="12" r="3"/>
+        <circle cx="84" cy="12" r="3"/><circle cx="108" cy="12" r="3"/><circle cx="132" cy="12" r="3"/><circle cx="148" cy="12" r="3"/>
+        <path d="M12 12 Q24 0 36 12 T60 12 T84 12 T108 12 T132 12" />
+      </g>
+    </svg>
+  </div>
+
+  <section class="section band">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Your turn</span>
+        <h2>Pin your own memory</h2>
+        <p>A first meeting, a hard goodbye, a silly argument over the last vada — if it happened over a cup here, it belongs on this wall.</p>
+      </div>
+
+      <form class="share-form" id="share-form">
+        <div class="field">
+          <label for="name">Your name (or how you'd like to be known)</label>
+          <input type="text" id="name" name="name" maxlength="60" placeholder="e.g. Meera, or 'the regular by the window'">
+        </div>
+        <div class="field">
+          <label for="title">Give it a title</label>
+          <input type="text" id="title" name="title" maxlength="80" required placeholder="e.g. The seat by the window">
+        </div>
+        <div class="field">
+          <label for="mood">How does it feel, looking back?</label>
+          <select id="mood" name="mood">
+            <option value="warm">Warm</option>
+            <option value="nostalgic">Nostalgic</option>
+            <option value="funny">Funny</option>
+            <option value="bittersweet">Bittersweet</option>
+            <option value="hopeful">Hopeful</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="story">Tell it your way</label>
+          <textarea id="story" name="story" required minlength="20" maxlength="2000" placeholder="Start wherever feels right..."></textarea>
+          <p class="form-note">Shared publicly on this wall. Please leave out anything too personal to share with strangers.</p>
+        </div>
+        <button type="submit" class="btn btn-primary">Pin to the wall</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="footer-line">varunga, kadhai sollunga — come in, tell us a story.</span>
+    <span class="footer-meta">&copy; 2026 Kadhaipooma Cafe</span>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/stories.js"></script>
+</body>
+</html>

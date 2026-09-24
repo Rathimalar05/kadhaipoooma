@@ -1,0 +1,29 @@
+[
+  {
+    "id": "seed-1",
+    "name": "Meera",
+    "title": "The seat by the window",
+    "story": "My grandmother and I used to split one filter kaapi every Sunday, right by that corner window. She's gone now, but every time I sit there I still hear her telling me to slow down and drink it properly, not gulp it like a bus was waiting.",
+    "mood": "nostalgic",
+    "likes": 16,
+    "createdAt": "2026-08-02T05:30:00.000Z"
+  },
+  {
+    "id": "seed-2",
+    "name": "Arun",
+    "title": "First rain, first job offer",
+    "story": "I got my first offer letter sitting in this cafe during the first rain of the season. The power went out, the whole place lit candles, and a stranger two tables away bought me a badam milk to celebrate. I never learned her name.",
+    "mood": "warm",
+    "likes": 21,
+    "createdAt": "2026-08-10T11:15:00.000Z"
+  },
+  {
+    "id": "seed-3",
+    "name": "Priya",
+    "title": "The murukku thief",
+    "story": "My little brother once ate an entire plate of murukku that was meant for four of us before we'd even sat down properly, then blamed it on the cat that doesn't exist. We still bring it up every single time we're here.",
+    "mood": "funny",
+    "likes": 9,
+    "createdAt": "2026-08-18T14:00:00.000Z"
+  }
+]

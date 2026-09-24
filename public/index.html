@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kadhaipooma — a cafe for stories</title>
+<meta name="description" content="Kadhaipooma is a cafe for people who talk, linger, and share their memories over filter kaapi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Literata:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand">
+      <span class="brand-mark">Kadhaipooma</span>
+      <span class="brand-sub">கதைப்போமா</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/menu.html">Menu</a></li>
+        <li><a href="/stories.html">Story Wall</a></li>
+        <li><a href="/about.html">Our Story</a></li>
+        <li><a href="/contact.html">Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-scene" aria-hidden="true">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#100d0b"/>
+            <stop offset="55%" stop-color="#1a1512"/>
+            <stop offset="100%" stop-color="#221a14"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="50%" cy="35%" r="65%">
+            <stop offset="0%" stop-color="#5a3a22" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#5a3a22" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="vessel" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8a5a3a"/>
+            <stop offset="100%" stop-color="#3a2416"/>
+          </linearGradient>
+          <linearGradient id="vessel2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#b98455"/>
+            <stop offset="100%" stop-color="#4a2f1c"/>
+          </linearGradient>
+          <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#4a2f1e"/>
+            <stop offset="100%" stop-color="#2a1a10"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="1600" height="900" fill="url(#bg)"/>
+        <ellipse cx="900" cy="260" rx="700" ry="340" fill="url(#glow)"/>
+
+        <!-- bokeh -->
+        <circle cx="220" cy="180" r="4" fill="#c9a24a" opacity="0.5"/>
+        <circle cx="1380" cy="150" r="3" fill="#c9a24a" opacity="0.4"/>
+        <circle cx="1500" cy="320" r="5" fill="#e0763f" opacity="0.3"/>
+        <circle cx="150" cy="420" r="3" fill="#c9a24a" opacity="0.35"/>
+
+        <!-- upper shelf -->
+        <rect x="0" y="330" width="1600" height="26" fill="url(#wood)"/>
+        <rect x="0" y="356" width="1600" height="8" fill="#150e09"/>
+
+        <!-- vessels row 1 (on upper shelf) -->
+        <g transform="translate(230,200)">
+          <path d="M0 130 h150 v-20 a75 60 0 0 1 150 0 v20 h60 v130 H0 Z" fill="url(#vessel)"/>
+          <path d="M340 90 c70 -14 70 90 4 92 h-30" stroke="#241608" stroke-width="10" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(700,180)">
+          <ellipse cx="90" cy="150" rx="90" ry="18" fill="#150e09" opacity="0.5"/>
+          <path d="M0 150 V70 a90 60 0 0 1 180 0 v80 Z" fill="url(#vessel2)"/>
+          <path d="M60 6 l30 -20 l30 20" stroke="#241608" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <g transform="translate(940,230)">
+          <path d="M0 100 h120 v-14 a60 46 0 0 1 120 0 v14 h40 v100 H0 Z" fill="url(#vessel)"/>
+        </g>
+        <g transform="translate(1160,210)">
+          <path d="M0 120 h80 v-40 a40 90 0 0 1 80 0 v40 h40 v120 H0 Z" fill="url(#vessel2)"/>
+          <path d="M190 100 c50 -8 50 70 2 70 h-22" stroke="#241608" stroke-width="8" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- lower shelf -->
+        <rect x="0" y="620" width="1600" height="26" fill="url(#wood)"/>
+        <rect x="0" y="646" width="1600" height="8" fill="#150e09"/>
+
+        <!-- vessels row 2 (lower shelf) -->
+        <g transform="translate(120,500)">
+          <path d="M0 110 h100 v-20 a50 40 0 0 1 100 0 v20 h30 v110 H0 Z" fill="url(#vessel2)"/>
+        </g>
+        <g transform="translate(430,470)">
+          <ellipse cx="70" cy="150" rx="72" ry="14" fill="#150e09" opacity="0.4"/>
+          <path d="M0 150 V90 a70 50 0 0 1 140 0 v60 Z" fill="url(#vessel)"/>
+        </g>
+        <g transform="translate(660,510)">
+          <path d="M0 100 h90 v-16 a45 34 0 0 1 90 0 v16 h26 v100 H0 Z" fill="url(#vessel2)"/>
+          <path d="M150 84 c40 -6 40 56 2 56 h-18" stroke="#241608" stroke-width="7" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(880,480)">
+          <path d="M0 130 h120 v-24 a60 48 0 0 1 120 0 v24 h34 v100 H0 Z" fill="url(#vessel)"/>
+        </g>
+        <g transform="translate(1140,500)">
+          <circle cx="40" cy="60" r="40" fill="#160f0a"/>
+          <circle cx="40" cy="60" r="40" fill="none" stroke="#c9a24a" stroke-width="2" opacity="0.6"/>
+        </g>
+        <g transform="translate(1260,500)">
+          <path d="M0 20 q60 -30 120 0 v70 a60 30 0 0 1 -120 0 Z" fill="url(#vessel2)" opacity="0.9"/>
+        </g>
+      </svg>
+    </div>
+
+    <svg class="hero-wallpaper" viewBox="0 0 100 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <pattern id="floral" width="60" height="60" patternUnits="userSpaceOnUse">
+          <circle cx="15" cy="15" r="8" fill="none" stroke="#c9a24a" stroke-width="1"/>
+          <circle cx="45" cy="45" r="8" fill="none" stroke="#c9a24a" stroke-width="1"/>
+          <path d="M15 23 q10 10 0 20" stroke="#c9a24a" stroke-width="1" fill="none"/>
+        </pattern>
+      </defs>
+      <rect width="100" height="900" fill="url(#floral)"/>
+    </svg>
+
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <span class="hero-tamil">கதைப்போமா</span>
+      <h1>A cafe where the conversation is the menu.</h1>
+      <p class="lede">Filter kaapi that tastes like home, mismatched chairs, and a wall full of strangers who became regulars. Pull up a chair. Let's chat.</p>
+      <div class="hero-actions">
+        <a href="/stories.html" class="btn btn-primary">Read the Story Wall</a>
+        <a href="/menu.html" class="btn">See the menu</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="kolam-divider" aria-hidden="true">
+    <svg width="160" height="24" viewBox="0 0 160 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="var(--gold)" stroke-width="1.2" opacity="0.7">
+        <circle cx="12" cy="12" r="3"/><circle cx="36" cy="12" r="3"/><circle cx="60" cy="12" r="3"/>
+        <circle cx="84" cy="12" r="3"/><circle cx="108" cy="12" r="3"/><circle cx="132" cy="12" r="3"/><circle cx="148" cy="12" r="3"/>
+        <path d="M12 12 Q24 0 36 12 T60 12 T84 12 T108 12 T132 12" />
+      </g>
+    </svg>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">From the wall</span>
+        <h2>A few things people left behind</h2>
+      </div>
+      <div class="story-board" id="preview-board">
+        <article class="story-card">
+          <span class="story-mood">warm</span>
+          <h3>First rain, first job offer</h3>
+          <p class="body">I got my first offer letter sitting in this cafe during the first rain of the season. A stranger two tables away bought me a badam milk to celebrate.</p>
+          <div class="story-meta"><span>Arun</span><span>&#9829; 21</span></div>
+        </article>
+        <article class="story-card">
+          <span class="story-mood">nostalgic</span>
+          <h3>The seat by the window</h3>
+          <p class="body">My grandmother and I used to split one filter kaapi every Sunday, right by that corner window. She still tells me to slow down.</p>
+          <div class="story-meta"><span>Meera</span><span>&#9829; 14</span></div>
+        </article>
+        <article class="story-card">
+          <span class="story-mood">funny</span>
+          <h3>The murukku thief</h3>
+          <p class="body">My brother once ate an entire plate of murukku before we'd even sat down, then blamed a cat that doesn't exist.</p>
+          <div class="story-meta"><span>Priya</span><span>&#9829; 9</span></div>
+        </article>
+      </div>
+      <p style="margin-top:36px;"><a href="/stories.html" class="btn-quiet">Read every story &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="container about-grid">
+      <div>
+        <span class="hero-eyebrow" style="margin-bottom:14px;">Why we opened</span>
+        <h2>Some conversations need a table, not a screen.</h2>
+        <p>Kadhaipooma started as one table on a college veranda where a few of us traded stories over kaapi instead of scrolling. We kept the habit and built a whole cafe around it.</p>
+        <p class="pull-quote">"Every table here has heard something it will never repeat."</p>
+      </div>
+      <div>
+        <h3 style="font-family:var(--font-display); font-style:italic; font-size:1.3rem;">What you'll find</h3>
+        <ul class="values-list">
+          <li>Filter kaapi made the slow way, no shortcuts.</li>
+          <li>A corkboard wall where regulars leave notes for strangers.</li>
+          <li>Corners built for long conversations, not fast turnover.</li>
+          <li>Snacks meant for sharing across the table.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="footer-line">varunga, kadhai sollunga — come in, tell us a story.</span>
+    <span class="footer-meta">&copy; 2026 Kadhaipooma Cafe</span>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
